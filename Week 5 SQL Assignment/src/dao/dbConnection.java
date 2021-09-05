@@ -8,8 +8,8 @@ public class dbConnection {
 
 	
 	private final static String URL = "jdbc:mysql://localhost:3306/plants";
-	private final static String USERNAME = "root";
-	private final static String PASSWORD = "thisis10ch";
+	private final static String USERNAME = System.getenv("username");;
+	private final static String PASSWORD = System.getenv("password");;
 	private static Connection connection;
 	private static dbConnection instance;
 	
